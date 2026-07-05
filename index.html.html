@@ -1389,7 +1389,7 @@ function setQty(code, val){
 // 沒填的話，訂單只會顯示複製/LINE/Email視窗，不會自動記錄到試算表，
 // 也不會有「打姓名帶出舊訂單」的功能。
 // ============================================================
-const GAS_WEB_APP_URL = '';
+const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbxoJJNLQRpyeIJYWaYfxMIu3V5ua456SKaZpPJlko-AqK0UoQzfQN2fxOPTUsy9G4bM/exec';
 
 async function sendToSheet(name, itemsArr, totalAmount, printInfo, notes){
   if(!GAS_WEB_APP_URL) return 'skip';
